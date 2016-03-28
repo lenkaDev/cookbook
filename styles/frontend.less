@@ -1,0 +1,71 @@
+/* 
+    Created on : 27.3.2016, 22:50:57
+    Author     : Lenka Kadlecová | @lenkaDev
+*/
+
+@import "/node_modules/normalize.css/normalize.css";
+@import "../node_modules/bootstrap/less/bootstrap.less";
+@import "variables.less";
+@import "mixins.less";
+
+body {
+    background-color: @body-bg;
+    font-size: @base-font-size;
+    
+    header {
+        background-color: @header-bg;
+        height: 70px;
+        position: static;
+        
+        form {
+            
+            input {
+                position: absolute;
+                top: 12px;
+                right: 10px;
+                width: 100%;
+                height: 45px;
+                .border-radius(10px);
+            }
+        }
+    }
+    
+    nav {
+        text-align: center;
+        background-color: @nav-bg;
+        color: @nav-clr;
+        
+       
+        ul {
+            height: 40px;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        
+        li {
+            line-height: 40px;
+            text-transform: uppercase;
+       
+            
+            &:hover, &.selected {
+                background-color:  @nav-hover-bg;
+            }
+        }
+    }
+   
+    .recipe {
+        background-color: @recipe-bg;
+        margin-top: 10px;
+        height: 350px;
+    }
+    
+    footer {
+        text-align: center;
+        color: @footer-clr;
+        position: fixed;
+        bottom: 0;
+        height: 29px;
+    }
+}
+
